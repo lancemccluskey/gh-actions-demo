@@ -1,7 +1,7 @@
 name: tests-pics
 
 on:
-  pull_requests:
+  pull_request:
     paths:
       - 'pages/pics/**'
 
