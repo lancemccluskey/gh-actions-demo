@@ -2,6 +2,7 @@
 import { jsx } from 'theme-ui';
 
 const Button = ({ handleNextClick, handlePrevClick }) => {
+  console.log('Button');
   return (
     <div sx={{ display: 'flex', justifyContent: 'space-around' }}>
       <button sx={{ backgroundColor: 'highlight' }} onClick={handlePrevClick}>
