@@ -1,0 +1,20 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<Button /> renders 1`] = `
+<div>
+  <div
+    class="css-13uxruf-Button"
+  >
+    <button
+      class="css-uw5q0g-Button"
+    >
+      Like
+    </button>
+    <button
+      class="css-uw5q0g-Button"
+    >
+      Next
+    </button>
+  </div>
+</div>
+`;

@@ -1,0 +1,39 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<Nav /> should render 1`] = `
+<div>
+  <header
+    class="css-6ihouv-Nav"
+  >
+    <nav
+      class="css-6ihouv-Nav"
+    >
+      <a
+        class="css-6ihouv-Nav"
+      >
+        Home
+      </a>
+      <a
+        class="css-6ihouv-Nav"
+      >
+         Facts
+      </a>
+      <a
+        class="css-6ihouv-Nav"
+      >
+         Jokes
+      </a>
+      <a
+        class="css-6ihouv-Nav"
+      >
+         Pics
+      </a>
+      <a
+        class="css-6ihouv-Nav"
+      >
+         Quotes
+      </a>
+    </nav>
+  </header>
+</div>
+`;

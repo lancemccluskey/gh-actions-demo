@@ -1,16 +1,16 @@
-import React from 'react';
-import styled from 'styled-components';
+/** @jsx jsx */
+import { jsx } from 'theme-ui';
 
-const StyledButton = styled.button`
-  border-radius: 5%;
-  background-color: #048727;
-  width: 25px;
-  height: 15px;
-`;
-
-const Button = () => {
+const Button = ({ handleNextClick, handlePrevClick }) => {
   return (
-    <StyledButton />
+    <div sx={{ display: 'flex', justifyContent: 'space-around' }}>
+      <button sx={{ backgroundColor: 'highlight' }} onClick={handlePrevClick}>
+        Like
+      </button>
+      <button sx={{ backgroundColor: 'highlight' }} onClick={handleNextClick}>
+        Next
+      </button>
+    </div>
   );
 };
 

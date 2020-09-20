@@ -1,10 +1,12 @@
-import React from 'react';
-import Card from '../src/components/Card';
+/** @jsx jsx */
+import { jsx } from 'theme-ui';
 
 const Homepage = () => {
   return (
-    <div>
-      <Card />
+    <div sx={{ height: `calc(100vh - 60px)` }}>
+      <div sx={{ variant: 'containers.page' }}> 
+        <h1 sx={{ fontSize: 8, my: 0 }} >GH Actions</h1>
+      </div>
     </div>
   );
 };

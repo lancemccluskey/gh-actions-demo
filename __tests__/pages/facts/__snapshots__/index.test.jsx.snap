@@ -1,0 +1,31 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<Facts /> renders 1`] = `
+<div>
+  <div
+    class="css-iiivav-Facts"
+  >
+    <div
+      class="css-1nuvgh6-Card"
+    >
+      <span>
+        testfact
+      </span>
+      <div
+        class="css-13uxruf-Button"
+      >
+        <button
+          class="css-uw5q0g-Button"
+        >
+          Like
+        </button>
+        <button
+          class="css-uw5q0g-Button"
+        >
+          Next
+        </button>
+      </div>
+    </div>
+  </div>
+</div>
+`;

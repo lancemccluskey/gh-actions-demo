@@ -1,27 +1,11 @@
-import React from 'react';
-import styled from 'styled-components';
-import Button from './Button';
+/** @jsx jsx */
+import { jsx } from 'theme-ui';
 
-const StyledCard = styled.div`
-  display: flex;
-  width: 50vw;
-  height: 50vh;
-  border: 1px solid black;
-`;
-
-const StyledContainer = styled.div`
-  margin-top: 10px;
-  display: flex;
-  justify-content: center;
-`;
-
-const Card = () => {
+const Card = ({ children }) => {
   return (
-    <StyledContainer>
-      <StyledCard>
-            <Button />
-      </StyledCard>
-    </StyledContainer>
+    <div sx={{ variant: 'containers.card' }}>
+      {children}
+    </div>
   );
 };
 

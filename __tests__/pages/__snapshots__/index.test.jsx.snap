@@ -1,0 +1,19 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<Homepage /> renders 1`] = `
+<div>
+  <div
+    class="css-14vyic8-Homepage"
+  >
+    <div
+      class="css-17svcfk-Homepage"
+    >
+      <h1
+        class="css-us1uot-Homepage"
+      >
+        GH Actions
+      </h1>
+    </div>
+  </div>
+</div>
+`;
