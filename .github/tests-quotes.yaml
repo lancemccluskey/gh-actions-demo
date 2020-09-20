@@ -1,0 +1,13 @@
+name: tests-quotes
+
+on:
+  pull_requests:
+    paths:
+      - 'pages/quotes/**'
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v2
+      - run: npm install && npm test -- -f quotes/index.test

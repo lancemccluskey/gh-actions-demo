@@ -1,0 +1,13 @@
+name: tests-jokes
+
+on:
+  pull_requests:
+    paths:
+      - 'pages/jokes/**'
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v2
+      - run: npm install && npm test -- -f jokes/index.test
