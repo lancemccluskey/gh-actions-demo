@@ -1,7 +1,7 @@
 name: tests-facts
 
 on:
-  pull_requests:
+  pull_request:
     paths:
       - 'pages/facts/**'
 
