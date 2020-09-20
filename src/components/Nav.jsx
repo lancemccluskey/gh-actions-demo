@@ -3,6 +3,7 @@ import { jsx } from 'theme-ui';
 import Link from 'next/link';
 
 const Nav = () => {
+  console.log('Nav');
   return (
     <header sx={{ variant: 'containers.header' }}>
       <nav sx={{ variant: 'containers.nav' }}>
