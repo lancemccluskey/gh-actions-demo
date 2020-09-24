@@ -6,25 +6,56 @@ GitHub workflows live in the root directory under `.github/workflows/` and use Y
 
 These two branches show different ways we can use GH Actions:
 
-1. `end` - This branch only runs tests for specific directories that have changes in PRs opened against it. For example, a change to one of the components or changing a single page.
+1. 
+  `end` - This branch only runs tests for specific directories that have changes in PRs opened against it. For example, a change to one of the components or changing a single page.
 
-2. `end-all-tests` - This branch runs all tests for every PR opened against it.
+  To test out, create a new PR against this branch and you will see only the tests running for the specific files you edited. 
 
-Example build:
+2. 
+
+  `end-all-tests` - This branch runs all tests for every PR opened against it.
+
+  To test out, create a new PR against this branch and you will see that all of the tests are ran.
+
+***
+
+## The workflow file
 
 ```yaml
-name: <workflow-name>
+# Name of the workflow as it appears in the Actions
+# tab of the gh repo
+name: <workflow-name> 
 
-on:
-  pull_request:
-    paths: <path/to/files>
+# Specify the event(s) in which you want to trigger
+# this workflow
+on: [push] 
 
+# jobs group all the jobs that will run in this workflow
 jobs:
   <job-name>:
+    # Configure the machine to run the workflow on
     runs-on: ubuntu-latest
+    # Groups all the steps under this job name
     steps:
+      # This action checks out your repo and downloads it to the runner
       - uses: actions/checkout@v2
       - run: npm install && npm test
 ```
 
-// TODO: Make some diagrams from drawio to show how gh actions works
+## GH Actions Terminology
+
+**Workflows** - Automated procedure made up of one or more jobs to be triggered and ran by an event. 
+
+**Events** - Activity that triggers a workflow. Can be scheduled, manual, or through a webhook thats fired when a PR is opened for example.
+
+**Jobs** - Set of steps to execute on a runner by a workflow. Multiple jobs run concurrently by default.
+
+**Steps** - Task that runs commands inside of a runner. Every step within the same job uses the same runner.
+
+**Actions** - Standalone commands combined into steps to create a job. 
+
+**Runners** - Server that runs our tests. You can use self hosted runners, but gh provides its own for MacOS, Windows, and Ubuntu.
+
+
+
+
