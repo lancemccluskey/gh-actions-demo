@@ -1,3 +1,5 @@
+![collywobbles](https://github.com/lancemccluskey/gh-actions-demo/workflows/collywobbles/badge.svg)
+
 # GH Actions Demo
 
 GitHub Actions gives us a way to manage CI pipelines in one logical place to improve developer workflows and increase efficiency.
