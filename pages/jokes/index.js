@@ -6,7 +6,7 @@ import Button from '../../src/components/Button';
 
 const Jokes = ({ data }) => {
   const [joke, setJoke] = useState(data.joke);
-
+  console.log('asdf');
   const handleNextClick = async () => {
     const res = await fetch('https://icanhazdadjoke.com/', {
       headers: {
