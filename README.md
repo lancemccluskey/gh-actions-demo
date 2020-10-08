@@ -69,5 +69,15 @@ jobs:
   You can use self hosted runners, but gh provides its own for MacOS, Windows, and Ubuntu.
   A list of GH hosted runners can be found [here](https://docs.github.com/en/free-pro-team@latest/actions/reference/workflow-syntax-for-github-actions#jobsjob_idruns-on)
 
+**Artifacts** -
+  Data that is persisted after a workflow is complete. 
+  The data can be shared among other jobs within the same workflow.
+  See the docs for more information [here](https://docs.github.com/en/free-pro-team@latest/actions/guides/storing-workflow-data-as-artifacts#about-workflow-artifacts)
+
+**Annotations** -
+  Used with GitHub Apps. You use the Checks API
+  to run checks against code changes and the output 
+  will be put here. Not really useful for us. 
+  See more [here](https://docs.github.com/en/free-pro-team@latest/rest/reference/checks#create-a-check-run)
 
 
